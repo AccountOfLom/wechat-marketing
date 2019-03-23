@@ -23,11 +23,11 @@ protected function schedule(Schedule $schedule)
 
 #### 异常处理
 
-系统错误的全局捕获、自定义异常分别处理并自动响应，见 `app/Exceptions` 中的异常处理类，使用方式：
+系统错误的全局捕获、自定义异常分别处理并自动响应，见 `app/Exceptions` 中的异常处理类，助手函数：
 ```php
-//参数异常
-throw_if_auth(true, 'message');
 //权限异常
+throw_if_auth(true, 'message');
+//参数异常
 throw_if_param(true, 'message');
 //一般性异常
 throw_if_general(true, 'message');
